@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Forum</title>
+  <style>
+    /* Styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #b57515;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+
+    header nav a:hover {
+      background-color: #8b5010;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .community {
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 5px;
+      color: #333;
+    }
+
+    .community h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .community p {
+      margin-bottom: 20px;
+      color: #666;
+    }
+
+    .community-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .community-item {
+      width: calc(33.33% - 20px);
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .community-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .community-item:nth-child(odd) {
+      background-color: #e5e5e5;
+    }
+
+    .community-item:nth-child(3n) {
+      background-color: #d9d9d9;
+    }
+
+    .community-item:nth-child(5n) {
+      background-color: #cccccc;
+    }
+
+    .community-item:nth-child(7n) {
+      background-color: #bfbfbf;
+    }
+
+    .community-item:nth-child(9n) {
+      background-color: #b3b3b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="./index.html">Home</a>
+          <a href="./petsitter.html">Find a Sitter</a>
+          <a href="./becomesitter.html">Become a Sitter</a>
+          <a href="./resource.html">Resources</a>
+          <a href="./community.html">Community Forum</a>
+          <a href="./aboutus.html">About Us</a>
+          <a href="./contact.html">Contact Us</a>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <h1 style="text-align: center;">Community Forum</h1>
+
+    <!-- Community List -->
+    <div class="community-list">
+      <!-- Community 1 -->
+      <div class="community-item">
+        <h2>Adventure Paw Pals</h2>
+        <p>Connect with other adventurous pet owners and share tips on outdoor activities and travel destinations suitable for various pets.</p>
+        <a href="#">Join Adventure Paw Pals</a>
+      </div>
+      
+      <!-- Community 2 -->
+      <div class="community-item">
+        <h2>Exotic Pets Enthusiasts</h2>
+        <p>For owners of exotic pets such as reptiles, birds, and small mammals. Share knowledge and experiences on caring for unique pets.</p>
+        <a href="#">Join Exotic Pets Enthusiasts</a>
+      </div>
+
+      <!-- Community 3 -->
+      <div class="community-item">
+        <h2>Aquatic Friends Society</h2>
+        <p>Dive into discussions about aquatic pets such as fish, turtles, and amphibians. Share tips on tank setups, water quality, and aquatic pet care.</p>
+        <a href="#">Join Aquatic Friends Society</a>
+      </div>
+
+      <!-- Community 4 -->
+      <div class="community-item">
+        <h2>Small Animal Kingdom</h2>
+        <p>Join fellow small animal owners to discuss topics related to rabbits, guinea pigs, hamsters, and other small pets. Share tips on housing, diet, and health.</p>
+        <a href="#">Join Small Animal Kingdom</a>
+      </div>
+
+      <!-- Community 5 -->
+      <div class="community-item">
+        <h2>Bird Lovers Club</h2>
+        <p>For bird enthusiasts to share stories, tips, and advice on caring for various bird species including parrots, canaries, and finches.</p>
+        <a href="#">Join Bird Lovers Club</a>
+      </div>
+
+      <!-- Community 6 -->
+      <div class="community-item">
+        <h2>Reptile Realm</h2>
+        <p>Connect with other reptile owners and enthusiasts. Share insights and information on reptile care, habitat setups, and species-specific needs.</p>
+        <a href="#">Join Reptile Realm</a>
+      </div>
+
+      <!-- Community 7 -->
+      <div class="community-item">
+        <h2>Furry Friends Fellowship</h2>
+        <p>Join a community of pet owners with a variety of furry companions including rabbits, guinea pigs, hamsters, and more. Share photos, stories, and advice.</p>
+        <a href="#">Join Furry Friends Fellowship</a>
+      </div>
+
+      <!-- Community 8 -->
+      <div class="community-item">
+        <h2>Fish Fanatics Club</h2>
+        <p>For aquarium enthusiasts and fishkeepers. Discuss aquarium setups, fish species, water parameters, and maintenance tips.</p>
+        <a href="#">Join Fish Fanatics Club</a>
+      </div>
+
+      <!-- Community 9 -->
+      <div class="community-item">
+        <h2>Pawsitive Training Hub</h2>
+        <p>Join a community dedicated to positive reinforcement training methods. Share training tips, behavior modification techniques, and success stories.</p>
+        <a href="#">Join Pawsitive Training Hub</a>
+      </div>
+      
+      <!-- Community 10 -->
+      <div class="community-item">
+        <h2>Horse Lovers Haven</h2>
+        <p>Connect with fellow equestrians and horse enthusiasts. Discuss horse care, training techniques, riding tips, and equestrian events.</p>
+        <a href="#">Join Horse Lovers Haven</a>
+      </div>
+      
+      <!-- Community 11 -->
+      <div class="community-item">
+        <h2>Wildlife Watchers Club</h2>
+        <p>For wildlife enthusiasts and conservationists. Share experiences, wildlife photography, conservation efforts, and wildlife watching tips.</p>
+        <a href="#">Join Wildlife Watchers Club</a>
+      </div>
+      
+      <!-- Community 12 -->
+      <div class="community-item">
+          <h2>Animal Rescue Alliance</h2>
+          <p>Join a community dedicated to animal rescue and welfare. Share information about animal shelters, adoption events, and volunteer opportunities.</p>
+          <a href="#">Join Animal Rescue Alliance</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

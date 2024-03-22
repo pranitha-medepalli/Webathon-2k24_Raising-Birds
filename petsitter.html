@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find a Sitter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color:  #f7ede2;
+    }
+
+    header {
+      background-color: #b57515;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+
+    header nav a:hover {
+      background-color: #8b5010;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .profile{
+      width: 200px;
+      height: 300px;
+    }
+    .sitter-profiles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .sitter-profile {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      background-color: rgb(245, 236, 236);
+    }
+
+    .sitter-profile img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .sitter-profile h2 {
+      margin-top: 0;
+    }
+    .book-now-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #e0a36a; /* Blue color, you can change it to your preference */
+      color: #fff; /* White text color */
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .book-now-btn:hover {
+      background-color: #e0a36a; /* Darker blue color on hover */
+    }
+    
+
+    /* Additional styling for other sections of the page can be added here */
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./petsitter.html">Find a Sitter</a>
+      <a href="./becomesitter.html">Become a Sitter</a>
+      <a href="./resource.html">Resources</a>
+      <a href="./community.html">Community Forum</a>
+      <a href="./aboutus.html">About Us</a>
+      <a href="./contact.html">Contact Us</a>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <h1>Find a Sitter</h1>
+
+    <!-- Sitter Profiles -->
+    <div class="sitter-profiles">
+      <!-- Sitter Profile 1 -->
+      <div class="sitter-profile">
+        <img class="profile" src="https://www.abdn.ac.uk/img/460x/news/images/masc_149m_rdax_450x600.jpg" alt="Sitter 1">
+        <h2>Jane Doe</h2>
+        <p>Experience: 5 years</p>
+        <p>Pet Experience: Dogs, Cats, Birds</p>
+        <p>Availability: Monday to Friday</p>
+       <p>Location: Hyderabad</p>
+       <a href="./payment.html" class="book-now-btn">Book Now</a>
+
+      </div>
+
+      <!-- Sitter Profile 2 -->
+      <div class="sitter-profile">
+        <img class="profile" src="http://www.abdn.ac.uk/news/images/masc_121m_rdax_450x600.jpg" alt="Sitter 2">
+        <h2>John Smith</h2>
+        <p>Experience: 3 years</p>
+        <p>Pet Experience: Dogs, Small Mammals</p>
+        <p>Availability: Weekends</p>
+        <p>Location: Mumbai</p>
+        <a href="./payment.html" class="book-now-btn">Book Now</a>
+
+      </div>
+
+      <!-- Add more sitter profiles as needed -->
+      <!-- Sitter Profile 3 -->
+      <div class="sitter-profile">
+        <img class="profile" src="https://i.pinimg.com/originals/3a/25/d4/3a25d4c633cf0b4b8bb3af3adb91d9a4.jpg" alt="Sitter 3">
+        <h2>Alice Johnson</h2>
+        <p>Experience: 7 years</p>
+        <p>Pet Experience: Cats, Birds, Reptiles</p>
+        <p>Availability: Flexible</p>
+        <p>Location: Cheenai</p>
+        <a href="./payment.html" class="book-now-btn">Book Now</a>
+      </div>
+
+      <!-- Sitter Profile 4 -->
+      <div class="sitter-profile">
+        <img class="profile" src="https://media.istockphoto.com/id/1036079864/photo/confidence-leads-to-success.jpg?s=612x612&w=0&k=20&c=qHGk-I9utSjCoOpSjgO12MvgKri7-q0G8JawFMI66ac=" alt="Sitter 4">
+        <h2>Michael Brown</h2>
+        <p>Experience: 4 years</p>
+        <p>Pet Experience: Dogs, Cats</p>
+        <p>Availability: Evenings</p>
+        <p>Location: Mumbai</p>
+        <a href="./payment.html" class="book-now-btn">Book Now</a>
+      </div>
+
+      <!-- Add more sitter profiles as needed -->
+      <!-- Sitter Profile 5 -->
+      <div class="sitter-profile">
+        <img class="profile" src="https://www.hongrayphoto.com/wp-content/uploads/2021/03/Singapore-Passport-Studio-Photo-9.jpg" alt="Sitter 5">
+        <h2>Sarah Lee</h2>
+        <p>Experience: 2 years</p>
+        <p>Pet Experience: Dogs, Fish</p>
+        <p>Availability: Weekdays</p>
+        <p>Location: Cheenai</p>
+        <a href="./payment.html" class="book-now-btn">Book Now</a>
+      </div>
+
+      <!-- Sitter Profile 6 -->
+      <div class="sitter-profile">
+        <img class="profile" src="https://visafoto.com/img/passport-photo-original7.jpg" alt="Sitter 6">
+        <h2>David Rodriguez</h2>
+        <p>Experience: 6 years</p>
+        <p>Pet Experience: Dogs, Small Mammals</p>
+        <p>Availability: Weekends</p>
+        <p>Location: Delhi</p>
+        <a href="./payment.html" class="book-now-btn">Book Now</a>
+      </div>
+
+      <!-- Add more sitter profiles as needed -->
+      <div class="sitter-profile">
+        <img class="profile" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRghrDQDv-zkPv4NB839k1TTFMShIbxjpqqvA&s" alt="Sitter 6">
+        <h2>Aman Rathod</h2>
+        <p>Experience: 2.5 years</p>
+        <p>Pet Experience: Dogs, Fish, Small Mammals</p>
+        <p>Availability: Weekends</p>
+        <p>Location: Hyderabad</p>
+        <a href="./payment.html" class="book-now-btn">Book Now</a>
+      </div>
+
+      <div class="sitter-profile">
+        <img class="profile" src="https://media.istockphoto.com/id/1293903541/photo/young-woman-stock-photo.jpg?s=612x612&w=0&k=20&c=AvQGpGDrH-0nUNAL-uHuc1uidcTiiLbovyKJjsN_mOk=" alt="Sitter 6">
+        <h2>Shruthi Rangavarapu</h2>
+        <p>Experience: 1.5 years</p>
+        <p>Pet Experience: Cats, Fish, Small Mammals</p>
+        <p>Availability: Anytime</p>
+        <p>Location: Hyderabad</p>
+        <a href="./payment.html" class="book-now-btn">Book Now</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

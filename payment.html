@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking and Payment System</title>
+  <style>
+    /* Styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #b57515;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+
+    header nav a:hover {
+      background-color: #8b5010;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      color: #666;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #b57515;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #8b5010;
+    }
+
+    .payment-options {
+      margin-top: 20px;
+    }
+
+    .payment-options label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .payment-confirm {
+      display: none;
+      margin-top: 20px;
+    }
+
+    .payment-confirm input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .payment-confirm input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./petsitter.html">Find a Sitter</a>
+        <a href="./becomesitter.html">Become a Sitter</a>
+        <a href="./resource.html">Resources</a>
+        <a href="./community.html">Community Forum</a>
+        <a href="./aboutus.html">About Us</a>
+        <a href="./contact.html">Contact Us</a>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <h1>Booking and Payment System</h1>
+    
+    <p>Facilitate seamless booking and payment transactions between pet owners and sitters through our secure system. Enjoy peace of mind and convenience for both parties.</p>
+    
+    <h2>Book a Pet Sitter</h2>
+    <form id="booking-form" action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+      
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" required>
+      <label for="month">No.of Months:</label>
+      <input type="number" name="number" id="number">
+      <label for="message">Additional Information:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+      
+      <input type="submit" value="Book Now">
+    </form>
+
+    <div class="payment-options" id="payment-options" style="display: none;">
+      <h2>Select Payment Option:</h2>
+      <label>
+        <input type="radio" name="payment-option" value="credit-card"> Credit Card
+      </label>
+      <label>
+        <input type="radio" name="payment-option" value="paypal"> PayPal
+      </label>
+      <label>
+        <input type="radio" name="payment-option" value="phonepe"> PhonePe
+      </label>
+      <label>
+        <input type="radio" name="payment-option" value="google-pay"> Google Pay
+      </label>
+      <label>
+        <input type="radio" name="payment-option" value="paytm"> PayTM
+      </label>
+      <input type="button" value="Proceed to Payment" id="proceed-payment">
+    </div>
+
+    <div class="payment-confirm" id="payment-confirm" style="display: none;">
+      <h2>Confirm Payment</h2>
+      <p>Total Amount: $50</p>
+      <input type="submit" value="Confirm Payment" id="confirm-payment">
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('booking-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      document.getElementById('payment-options').style.display = 'block';
+    });
+
+    document.getElementById('proceed-payment').addEventListener('click', function() {
+      document.getElementById('payment-confirm').style.display = 'block';
+    });
+
+    document.getElementById('confirm-payment').addEventListener('click', function() {
+      alert('Booking Successful');
+    });
+  </script>
+</body>
+</html>
