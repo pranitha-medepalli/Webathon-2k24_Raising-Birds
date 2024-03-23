@@ -5,6 +5,9 @@ body {
  h1{
     margin-left: 500px;
  } 
+ .image{
+    margin-left: 650px;
+ }
   .chat-container {
     max-width: 400px;
     margin: 20px auto;

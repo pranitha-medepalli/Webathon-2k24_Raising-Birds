@@ -1,8 +1,8 @@
 // Dummy reviews data (replace with actual data)
 const reviews = [
-    { user: 'Customer 1', text: 'Great service! Highly recommended.' },
-    { user: 'Customer 2', text: 'The pet sitter was fantastic. Will definitely use again.' },
-    { user: 'Customer 3', text: 'My pet loved it! 5 stars.' }
+    { user: 'Jane ', text: 'Great service! Highly recommended.' },
+    { user: 'Austin', text: 'The pet sitter was fantastic. Will definitely use again.' },
+    { user: 'Jasmine', text: 'My pet loved it! 5 stars.' }
   ];
   
   // Function to render reviews
@@ -29,7 +29,7 @@ const reviews = [
     if (messageText !== '') {
       // For demonstration purposes, let's just add the message to the reviews array
       // In a real application, you would typically send the message to a server
-      reviews.push({ user: 'Customer', text: messageText });
+      reviews.push({ user: 'You', text: messageText });
       renderReviews();
       messageInput.value = '';
     }
@@ -37,4 +37,4 @@ const reviews = [
   
   // Initial render
   renderReviews();
-  
+ 
